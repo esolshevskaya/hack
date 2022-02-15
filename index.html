@@ -3,6 +3,7 @@
    <head>
       <title>APPLESCREAM</title>
       <meta charset="utf-8">
+       <!-- здесь и далее всякие штуки для оформления, которые были взяты откуда-то с интернета и сто раз менялись -->
       <meta name="description" content="Traveling HTML5 Template" />
       <meta name="author" content="Design Hooks" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -11,446 +12,452 @@
       <link href="css/screen.css" rel="stylesheet" />
    </head>
    <body class="home" id="page">
-      <!-- Header -->
-      <header class="main-header">
-         <div class="container">
-            <div class="header-content">
-               <a href="index.html">
-                  <img src="img/icon.png" alt="site identity" width="100"/>
-               </a>
+       <!-- Header -->
+       <header class="main-header">
+           <div class="container">
+               <div class="header-content">
+                   <a href="index.html">
+                       <img src="img/icon.png" alt="site identity" width="100" />
+                   </a>
+                   <!-- в разработке -->
+                   <nav class="site-nav">
+                       <ul class="clean-list site-links">
+                           <li>
+                               <a href="#">Поиск по рецептам</a> <!-- пока без ссылки -->
+                           </li>
+                           <li>
+                               <a href="#">Статистика</a> <!-- здесь могла бы быть ссылка тоже -->
+                           </li>
+                       </ul>
 
-               <nav class="site-nav">
-                  <ul class="clean-list site-links">
-                     <li>
-                        <a href="#">Поиск по рецептам</a>
-                     </li>
-                     <li>
-                        <a href="#">Статистика</a>
-                     </li>
-                  </ul>
+                       <a href="#" class="btn btn-outlined">Зарегистрируйся</a> <!-- на будущее -->
+                   </nav>
+               </div>
+           </div>
+       </header>
 
-                  <a href="#" class="btn btn-outlined">Зарегистрируйся</a>
-               </nav>
-            </div>
-         </div>
-      </header>
+       <!-- Main -->
+       <div class="content-box">
+           <!-- Заставочка -->
+           <section class="section section-hero">
+               <div class="hero-box">
+                   <div class="container">
+                       <div class="hero-text align-center">
+                           <h1>ПРОЕКТ "applescream"</h1>
+                           <p>найди себе классный рецепт прямо сейчас!</p>
+                       </div>
 
-      <!-- Main -->
-      <div class="content-box">
-          <!-- Заставочка -->
-          <section class="section section-hero">
-              <div class="hero-box">
-                  <div class="container">
-                      <div class="hero-text align-center">
-                          <h1>ПРОЕКТ "applescream"</h1>
-                          <p>найди себе классный рецепт прямо сейчас!</p>
-                      </div>
-
-                      <form class="destinations-form">
-                          <div class="input-line">
-                              <input type="text" name="destination" value="" class="form-input check-value" placeholder="какие у тебя есть продукты?" />
-                              <button type="button" name="destination-submit" class="form-submit btn btn-special">найти рецепты</button>
-                          </div>
-                      </form>
-                  </div>
-              </div>
-
-              <!-- Статистика -->
-              <div class="container">
-                  <div class="statistics-box">
-                      <div class="statistics-item">
-                          <span class="value">22 824</span>
-                          <p class="title">рецептов в базе</p>
-                      </div>
-
-                      <div class="statistics-item">
-                          <span class="value">всего 9</span>
-                          <p class="title">категорий блюд</p>
-                      </div>
-
-                      <div class="statistics-item">
-                          <span class="value">3 811</span>
-                          <p class="title">ингредиентов</p>
-                      </div>
-
-                      <div class="statistics-item">
-                          <span class="value">1 159 675</span>
-                          <p class="title">строк в датасете</p>
-                      </div>
-                  </div>
-              </div>
-          </section>
-
-          <section class="section section-destination">
-              <!-- Title -->
-              <div class="section-title">
-                  <div class="container">
-                      <h2 class="title">
-                          Мы взяли Eating dataset from eda.ru (by George Moroz)
-                      </h2>
-                      <h3>
-                          Рецепты (и их страницы на сайте eda.ru)
-                      </h3>
-                      <h3>
-                          Ингредиенты (и их id на сайте eda.ru)
-                      </h3>
-                      <h3>
-                          Объём ингредиента в блюде
-                      </h3>
-                      <h3>
-                          Категория блюда
-                      </h3>
-                      
-                  </div>
-                  <div>
-                      <h2>ВЫДАЧА С ПОИСКА:</h2>
-                  <iframe src="file.txt" style="border: none;"></iframe>
-                  </div>
-              </div>
-          </section>
-
-              <!-- Хорошая надпись -->
-              <section class="section section-destination">
-                  <!-- Title -->
-                  <div class="section-title">
-                      <div class="container">
-                          <h2 class="title">Наши лучшие рецепты</h2>
-                          <p class="sub-title">пожалуйста, поешь, а то тебе ещё на пары ехать</p>
-                      </div>
-                  </div>
-
-                  <!-- Еда всякая -->
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-md-16 col-xs-24">
-                              <div class="destination-box">
-                                  <div class="box-cover">
-                                      <a href="#">
-                                          <img src="img/питса.jpg" alt="destination image" />
-                                      </a>
-                                  </div>
-
-                                  <span class="boats-qty">439 ккал</span>
-
-                                  <div class="box-details">
-                                      <div class="box-meta">
-                                          <h4 class="city">Питса</h4>
-                                          <p class="country">без котов в составе</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="col-md-8 col-sm-12 col-xs-24">
-                              <div class="destination-box">
-                                  <div class="box-cover">
-                                      <a>
-                                          <img src="img/ктулхи.jpg" alt="destination image" />
-                                      </a>
-                                  </div>
-
-                                  <span class="boats-qty">642 ккал</span>
-
-                                  <div class="box-details">
-                                      <div class="box-meta">
-                                          <h4 class="city">Не4то</h4>
-                                          <p class="country">оно шевелится, бегите</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="col-md-8 col-sm-12 col-xs-24">
-                              <div class="destination-box">
-                                  <div class="box-cover">
-                                      <a>
-                                          <img src="img/пэльмэни.jpg" alt="destination image" />
-                                      </a>
-                                  </div>
-
-                                  <span class="boats-qty">542 ккал</span>
-
-                                  <div class="box-details">
-                                      <div class="box-meta">
-                                          <h4 class="city">Пэльмэни</h4>
-                                          <p class="country">потому что мы студенты</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="col-md-8 col-sm-12 col-xs-24">
-                              <div class="destination-box">
-                                  <div class="box-cover">
-                                      <a>
-                                          <img src="img/винишко.jpg" alt="destination image" />
-                                      </a>
-                                  </div>
-
-                                  <span class="boats-qty">0 ккал</span>
-
-                                  <div class="box-details">
-                                      <div class="box-meta">
-                                          <h4 class="city">Вода</h4>
-                                          <p class="country">с сероводородом</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="col-md-8 col-sm-12 col-xs-24">
-                              <div class="destination-box">
-                                  <div class="box-cover">
-                                      <a>
-                                          <img src="img/почка.jpg" alt="destination image" />
-                                      </a>
-                                  </div>
-
-                                  <span class="boats-qty">709 ккал</span>
-
-                                  <div class="box-details">
-                                      <div class="box-meta">
-                                          <h4 class="city">Твоя почка</h4>
-                                          <p class="country">с камнями</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="load-destinations-box">
-                              <div class="col-md-8 col-sm-12 col-xs-24">
-                                  <div class="destination-box">
-                                      <div class="box-cover">
-                                          <a>
-                                              <img src="img/букет.jpg" alt="destination image" />
-                                          </a>
-                                      </div>
-
-                                      <span class="boats-qty">495 ккал</span>
-
-                                      <div class="box-details">
-                                          <div class="box-meta">
-                                              <h4 class="city">Букет Конфет</h4>
-                                              <p class="country">убери руки, это на новый год</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-md-8 col-sm-12 col-xs-24">
-                                  <div class="destination-box">
-                                      <div class="box-cover">
-                                          <a>
-                                              <img src="img/мак.jpg" alt="destination image" />
-                                          </a>
-                                      </div>
-
-                                      <span class="boats-qty">5000 ккал</span>
-
-                                      <div class="box-details">
-                                          <div class="box-meta">
-                                              <h4 class="city">Еда из мака</h4>
-                                              <p class="country">у нас есть еда дома!</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="col-md-8 col-sm-12 col-xs-24">
-                                  <div class="destination-box">
-                                      <div class="box-cover">
-                                          <a>
-                                              <img src="img/басмач.jpg" alt="destination image" />
-                                          </a>
-                                      </div>
-
-                                      <span class="boats-qty">100 ккал</span>
-
-                                      <div class="box-details">
-                                          <div class="box-meta">
-                                              <h4 class="city">Обед на басмаче</h4>
-                                              <p class="country">грустно и невкусно</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="align-center">
-                          <a href="#" class="btn btn-default btn-load-destination"><span class="text">Загрузить ещё рецепты</span><i class="icon-spinner6"></i></a>
-                      </div>
-                  </div>
-              </section>
-
-              <!-- Нашёл чё покушоц? -->
-              <div class="parallax-box">
-                  <div class="container">
-                      <div class="text align-center">
-                          <h1>найди рецепт по твоим ингредиентам!</h1>
-                          <p>а если у тебя нет денег, иди побирайся к соседу</p>
-
-                          <a href="hakaton.ipynb" download="" class="btn btn-special no-icon size-2x">скачать наш чудесный код</a>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Раздел категорий рецептов -->
-              <section class="section section-boats">
-                  <!-- Title -->
-                  <div class="section-title">
-                      <div class="container">
-                          <h2 class="title">Что мы получили?</h2>
-                          <p class="sub-title">при (под)готовке ни один кот не пострадал</p>
-                      </div>
-                  </div>
-
-                  <!-- Контент -->
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-sm-12 col-xs-24">
-                              <div class="boat-box">
-                                  <div class="box-cover">
-                                      <img src="img/s0.png" alt="destination image" />
-                                  </div>
-
-                              </div>
-                          </div>
-
-                          <div class="col-sm-12 col-xs-24">
-                              <div class="boat-box">
-                                  <div class="box-cover">
-                                      <img src="img/s1.png" alt="destination image" />
-                                  </div>
-
-                              </div>
-                          </div>
-                      </div>
-
-                  </div>
-
-                  <!-- Контент 2 -->
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-sm-12 col-xs-24">
-                              <div class="boat-box">
-                                  <div class="box-cover">
-                                      <img src="img/s2.png" alt="destination image" />
-                                  </div>
-
-                              </div>
-                          </div>
-
-                          <div class="col-sm-12 col-xs-24">
-                              <div class="boat-box">
-                                  <div class="box-cover">
-                                      <img src="img/s3.png" alt="destination image" />
-                                  </div>
-
-                              </div>
-                          </div>
-                      </div>
-
-                  </div>
-
-                  <!-- Контент 3 -->
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-sm-12 col-xs-24">
-                              <div class="boat-box">
-                                  <div class="box-cover">
-                                      <img src="img/s4.png" alt="destination image" />
-                                  </div>
-
-                              </div>
-                          </div>
-
-                          <div class="col-sm-12 col-xs-24">
-                              <div class="boat-box">
-                                  <div class="box-cover">
-                                      <img src="img/s5.png" alt="destination image" />
-                                  </div>
-
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- Контент 4 -->
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-sm-12 col-xs-24">
-                              <div class="boat-box">
-                                  <div class="box-cover">
-                                      <img src="img/ppp.png" alt="destination image" />
-                                  </div>
-
-                              </div>
-                          </div>
-
-                          <div class="col-sm-12 col-xs-24">
-                              <div class="boat-box">
-                                  <div class="box-cover">
-                                      <img src="img/noam.png" alt="destination image" />
-                                  </div>
-
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-              </section>
-      </div>
-
-      <!-- Футер -->
-      <footer class="main-footer">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-9">
-                  <div class="widget widget_social">
-                     <h5 class="widget-title">Ставь лайк, подписывайся на канал</h5>
-                     <form class="subscribe-form">
-                        <div class="input-line">
-                           <input type="text" name="subscribe-email" value="" placeholder="пиши сюда email" />
-                        </div>
-                        <button type="button" name="subscribe-submit" class="btn btn-special no-icon">YEAH</button>
-                     </form>
-
-                     <ul class="clean-list social-block">
-                         <li>
-                             <a><i class="icon-facebook"></i></a>
-                         </li>
-                         <li>
-                             <a><i class="icon-twitter"></i></a>
-                         </li>
-                         <li>
-                             <a><i class="icon-google-plus"></i></a>
-                         </li>
-                         <li>
-                             <a><i class="icon-spinner6"></i></a>
-                         </li>
-                     </ul>
-                  </div>
+                       <form class="destinations-form">
+                           <div class="input-line">
+                               <!-- штука на будущее, которая красивая, но пока ничего не ищет (туда надо фласк подключать) -->
+                               <input type="text" name="destination" value="" class="form-input check-value" placeholder="какие у тебя есть продукты?" />
+                               <button type="button" name="destination-submit" class="form-submit btn btn-special">найти рецепты</button>
+                           </div>
+                       </form>
+                   </div>
                </div>
 
-               <div class="col-md-5">
-                  <div class="widget widget_links">
-                     <h5 class="widget-title">Сегодня с вами были:</h5>
-                     <ul>
-                        <li><a href="#">София Землянская</a></li>
-                        <li><a href="#">Варя Давлеева</a></li>
-                        <li><a href="#">Алёна Ольшевская</a></li>
-                        <li><a href="#">Лена Зайцева</a></li>
-                        <li><a href="#">Женя Мещерякова</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
+               <!-- Статистика -->
+               <div class="container">
+                   <div class="statistics-box">
+                       <div class="statistics-item">
+                           <span class="value">22 824</span>
+                           <p class="title">рецептов в базе</p>
+                       </div>
 
-      <!-- Scripts -->
-      <script src="js/jquery.js"></script>
-      <script src="js/functions.js"></script>
+                       <div class="statistics-item">
+                           <span class="value">всего 9</span>
+                           <p class="title">категорий блюд</p>
+                       </div>
+
+                       <div class="statistics-item">
+                           <span class="value">3 811</span>
+                           <p class="title">ингредиентов</p>
+                       </div>
+
+                       <div class="statistics-item">
+                           <span class="value">1 159 675</span>
+                           <p class="title">строк в датасете</p>
+                       </div>
+                   </div>
+               </div>
+           </section>
+
+           <section class="section section-destination">
+               <!-- Title -->
+               <div class="section-title">
+                   <div class="container">
+                       <h2 class="title">
+                           Мы взяли Eating dataset from eda.ru (by George Moroz)
+                       </h2>
+                       <h3>
+                           Рецепты (и их страницы на сайте eda.ru)
+                       </h3>
+                       <h3>
+                           Ингредиенты (и их id на сайте eda.ru)
+                       </h3>
+                       <h3>
+                           Объём ингредиента в блюде
+                       </h3>
+                       <h3>
+                           Категория блюда
+                       </h3>
+
+                   </div>
+                   <div>
+                       <h2>ВЫДАЧА С ПОИСКА:</h2>
+                       <iframe src="file.txt" style="border: none;"></iframe>
+                       <!-- ipynb записывает поисковую выдачу в файл, эта штука выводит инфу из файла-->
+                       <!-- в будущем можно было бы оформить покрасивее-->
+                   </div>
+               </div>
+           </section>
+
+           <!-- Хорошая надпись -->
+           <section class="section section-destination">
+               <!-- Title -->
+               <div class="section-title">
+                   <div class="container">
+                       <h2 class="title">Наши лучшие рецепты</h2>
+                       <p class="sub-title">пожалуйста, поешь, а то тебе ещё на пары ехать</p>
+                   </div>
+               </div>
+
+               <!-- Еда всякая -->
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-16 col-xs-24">
+                           <div class="destination-box">
+                               <div class="box-cover">
+                                   <a>
+                                       <img src="img/питса.jpg" alt="destination image" />
+                                   </a>
+                               </div>
+
+                               <span class="boats-qty">439 ккал</span>
+
+                               <div class="box-details">
+                                   <div class="box-meta">
+                                       <h4 class="city">Питса</h4>
+                                       <p class="country">без котов в составе</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="col-md-8 col-sm-12 col-xs-24">
+                           <div class="destination-box">
+                               <div class="box-cover">
+                                   <a>
+                                       <img src="img/ктулхи.jpg" alt="destination image" />
+                                   </a>
+                               </div>
+
+                               <span class="boats-qty">642 ккал</span>
+
+                               <div class="box-details">
+                                   <div class="box-meta">
+                                       <h4 class="city">Не4то</h4>
+                                       <p class="country">оно шевелится, бегите</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="col-md-8 col-sm-12 col-xs-24">
+                           <div class="destination-box">
+                               <div class="box-cover">
+                                   <a>
+                                       <img src="img/пэльмэни.jpg" alt="destination image" />
+                                   </a>
+                               </div>
+
+                               <span class="boats-qty">542 ккал</span>
+
+                               <div class="box-details">
+                                   <div class="box-meta">
+                                       <h4 class="city">Пэльмэни</h4>
+                                       <p class="country">потому что мы студенты</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="col-md-8 col-sm-12 col-xs-24">
+                           <div class="destination-box">
+                               <div class="box-cover">
+                                   <a>
+                                       <img src="img/винишко.jpg" alt="destination image" />
+                                   </a>
+                               </div>
+
+                               <span class="boats-qty">0 ккал</span>
+
+                               <div class="box-details">
+                                   <div class="box-meta">
+                                       <h4 class="city">Вода</h4>
+                                       <p class="country">с сероводородом</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="col-md-8 col-sm-12 col-xs-24">
+                           <div class="destination-box">
+                               <div class="box-cover">
+                                   <a>
+                                       <img src="img/почка.jpg" alt="destination image" />
+                                   </a>
+                               </div>
+
+                               <span class="boats-qty">709 ккал</span>
+
+                               <div class="box-details">
+                                   <div class="box-meta">
+                                       <h4 class="city">Твоя почка</h4>
+                                       <p class="country">с камнями</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="load-destinations-box">
+                           <div class="col-md-8 col-sm-12 col-xs-24">
+                               <div class="destination-box">
+                                   <div class="box-cover">
+                                       <a>
+                                           <img src="img/букет.jpg" alt="destination image" />
+                                       </a>
+                                   </div>
+
+                                   <span class="boats-qty">495 ккал</span>
+
+                                   <div class="box-details">
+                                       <div class="box-meta">
+                                           <h4 class="city">Букет Конфет</h4>
+                                           <p class="country">убери руки, это на новый год</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+
+                           <div class="col-md-8 col-sm-12 col-xs-24">
+                               <div class="destination-box">
+                                   <div class="box-cover">
+                                       <a>
+                                           <img src="img/мак.jpg" alt="destination image" />
+                                       </a>
+                                   </div>
+
+                                   <span class="boats-qty">5000 ккал</span>
+
+                                   <div class="box-details">
+                                       <div class="box-meta">
+                                           <h4 class="city">Еда из мака</h4>
+                                           <p class="country">у нас есть еда дома!</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+
+                           <div class="col-md-8 col-sm-12 col-xs-24">
+                               <div class="destination-box">
+                                   <div class="box-cover">
+                                       <a>
+                                           <img src="img/басмач.jpg" alt="destination image" />
+                                       </a>
+                                   </div>
+
+                                   <span class="boats-qty">100 ккал</span>
+
+                                   <div class="box-details">
+                                       <div class="box-meta">
+                                           <h4 class="city">Обед на басмаче</h4>
+                                           <p class="country">грустно и невкусно</p>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="align-center">
+                       <!-- просто так штука на будущее -->
+                       <a href="#" class="btn btn-default btn-load-destination"><span class="text">Загрузить ещё рецепты</span><i class="icon-spinner6"></i></a>
+                   </div>
+               </div>
+           </section>
+
+           <!-- Нашёл чё покушоц? -->
+           <div class="parallax-box">
+               <div class="container">
+                   <div class="text align-center">
+                       <h1>найди рецепт по твоим ингредиентам!</h1>
+                       <p>а если у тебя нет денег, иди побирайся к соседу</p>
+
+                       <a href="hakaton.ipynb" download="" class="btn btn-special no-icon size-2x">скачать наш чудесный код</a>
+                       <a href="eda.ipynb" download="" class="btn btn-special no-icon size-2x">скачать наш второй чудесный код</a>
+                   </div>
+               </div>
+           </div>
+
+           <!-- Раздел категорий рецептов -->
+           <section class="section section-boats">
+               <!-- Title -->
+               <div class="section-title">
+                   <div class="container">
+                       <h2 class="title">Что мы получили?</h2>
+                       <p class="sub-title">при (под)готовке ни один кот не пострадал</p>
+                   </div>
+               </div>
+
+               <!-- Контент -->
+               <div class="container">
+                   <div class="row">
+                       <div class="col-sm-12 col-xs-24">
+                           <div class="boat-box">
+                               <div class="box-cover">
+                                   <img src="img/s0.png" alt="destination image" />
+                               </div>
+
+                           </div>
+                       </div>
+
+                       <div class="col-sm-12 col-xs-24">
+                           <div class="boat-box">
+                               <div class="box-cover">
+                                   <img src="img/s1.png" alt="destination image" />
+                               </div>
+
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+
+               <!-- Контент 2 -->
+               <div class="container">
+                   <div class="row">
+                       <div class="col-sm-12 col-xs-24">
+                           <div class="boat-box">
+                               <div class="box-cover">
+                                   <img src="img/s2.png" alt="destination image" />
+                               </div>
+
+                           </div>
+                       </div>
+
+                       <div class="col-sm-12 col-xs-24">
+                           <div class="boat-box">
+                               <div class="box-cover">
+                                   <img src="img/s3.png" alt="destination image" />
+                               </div>
+
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+
+               <!-- Контент 3 -->
+               <div class="container">
+                   <div class="row">
+                       <div class="col-sm-12 col-xs-24">
+                           <div class="boat-box">
+                               <div class="box-cover">
+                                   <img src="img/s4.png" alt="destination image" />
+                               </div>
+
+                           </div>
+                       </div>
+
+                       <div class="col-sm-12 col-xs-24">
+                           <div class="boat-box">
+                               <div class="box-cover">
+                                   <img src="img/s5.png" alt="destination image" />
+                               </div>
+
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- Контент 4 -->
+               <div class="container">
+                   <div class="row">
+                       <div class="col-sm-12 col-xs-24">
+                           <div class="boat-box">
+                               <div class="box-cover">
+                                   <img src="img/ppp.png" alt="destination image" />
+                               </div>
+
+                           </div>
+                       </div>
+
+                       <div class="col-sm-12 col-xs-24">
+                           <div class="boat-box">
+                               <div class="box-cover">
+                                   <img src="img/noam.png" alt="destination image" />
+                               </div>
+
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+           </section>
+       </div>
+
+       <!-- Футер -->
+       <footer class="main-footer">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-9">
+                       <div class="widget widget_social">
+                           <h5 class="widget-title">Ставь лайк, подписывайся на канал</h5>
+                           <form class="subscribe-form">
+                               <div class="input-line">
+                                   <input type="text" name="subscribe-email" value="" placeholder="пиши сюда email" />
+                               </div>
+                               <button type="button" name="subscribe-submit" class="btn btn-special no-icon">YEAH</button>
+                           </form>
+                           <!-- ссылок на соцсеточки сегодня не будет -->
+                           <ul class="clean-list social-block">
+                               <li>
+                                   <a><i class="icon-facebook"></i></a>
+                               </li>
+                               <li>
+                                   <a><i class="icon-twitter"></i></a>
+                               </li>
+                               <li>
+                                   <a><i class="icon-google-plus"></i></a>
+                               </li>
+                               <li>
+                                   <a><i class="icon-spinner6"></i></a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+
+                   <div class="col-md-5">
+                       <div class="widget widget_links">
+                           <h5 class="widget-title">Сегодня с вами были:</h5>
+                           <ul>
+                               <!-- можно со ссылками на соцсеточки, можно без -->
+                               <li><a>София Землянская</a></li>
+                               <li><a>Варя Давлеева</a></li>
+                               <li><a>Алёна Ольшевская</a></li>
+                               <li><a>Лена Зайцева</a></li>
+                               <li><a>Женя Мещерякова</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </footer>
+
+       <!-- Scripts из интернета, без них всё упадёт -->
+       <script src="js/jquery.js"></script>
+       <script src="js/functions.js"></script>
    </body>
 </html>
